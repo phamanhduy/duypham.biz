@@ -1,154 +1,32 @@
-<title></title>
-<link href="//bizweb.sapocdn.net/100/455/010/themes/862159/assets/favicon.png?1654281222184" rel="shortcut icon"
-    type="image/x-icon" />
-<link href="https://raw.githack.com/phamanhduy/nguonhangbabyfaz/main/tab-style.css" rel="stylesheet" />
-<link href="https://raw.githack.com/phamanhduy/nguonhangbabyfaz/main/resources/sheet.css" rel="stylesheet"
-    type="text/css" />
-<!-- <div w3-include-html="https://raw.githack.com/phamanhduy/nguonhangbabyfaz/main/AN%20TO%C3%80N%20B%C3%89.html"></div>  -->
-<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:230px">
-    <div style="padding: 5px 20px 5px 60px;"><a href="/" target="_blank"><img alt="logo "
-                class="img-responsive lazyload loaded"
-                data-src="//bizweb.sapocdn.net/100/455/010/themes/862159/assets/logo.png?1654281222184"
-                data-was-processed="true"
-                src="//bizweb.sapocdn.net/100/455/010/themes/862159/assets/logo.png?1654281222184" style="
-        width: 105px;
-    " /> </a></div>
-    <button class="w3-bar-item w3-button tablink"
-        onclick="openCity(event, 'CHÍNH%20SÁCH%20ĐẠI%20LÝ%20BABYFAZ.html')" id="">CHÍNH SÁCH ĐẠI LÝ</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'AN%20TO%C3%80N%20B%C3%89.html')" id="">AN TOÀN BÉ</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ĐỒ%20CHƠI.html')" id="">ĐỒ CHƠI</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'THỜI%20TRANG%20BÉ.html')" id="">THỜI TRANG CHO TRẺ</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ĐỒ%20DÙNG%20ĂN%20UỐNG.html')" id="">ĐỒ DÙNG ĂN UỐNG</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ĐỒ%20SƠ%20SINH.html')" id="">ĐỒ SƠ SINH</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'COMOTOMO%20-%20PHILIP%20AVENT%20-%20LANSINOH.html')" id="">COMOTOMO - PHILIP AVENT - LANS</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'FATZBABY%20-%20SPECTRA.html')" id="">FATZBABY - SPECTRA</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'K%20-%20MOM.html')" id="">K-MOM</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'MIPBI%20.html')" id="">MIPBI</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'MOA%20BÉ%20BÉ.html')" id="">MOA BÉ BÉ</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'MUNCHKIN.html')" id="">MUNCHKIN</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'NUK.html')" id="">NUK</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'PIGEON.html')" id="">PIGEON</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'QUẦN%20ÁO%20-%20PHỤ%20KIỆN.html')" id="">QUẦN ÁO PHỤ KIỆN</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'RICHELL.html')" id="">RICHELL</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'SUMMER%20INFANT.html')" id="">SUMMER INFANT</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Tã%20quần%20Goo.N.html')" id="">Tã quần Goo.N</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'BABYMOOV.html')" id="">BABYMOOV</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TẮM%20VÀ%20VỆ%20SINH.html')" id="">TẮM VÀ VỆ SINH</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'UNIMOM%20-%20UPASS.html')" id="">UNIMOM - UPASS</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ĐỒ%20CHO%20MẸ.html')" id="">ĐỒ CHO MẸ</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ĐỒ%20ĐI%20NGỦ.html')" id="">ĐỒ ĐI NGỦ</button>
-</div>
-<div id="addHtmlContent" style="margin-left:130px">&nbsp;</div>
+
+<div w3-include-html="https://raw.githack.com/phamanhduy/duypham.cv/main/index.html"></div>
 <script>
-    function includeHTML(fileName) {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute(fileName);
-            if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                        /*remove the attribute, and call this function once more:*/
-                        elmnt.removeAttribute(fileName);
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /*exit the function:*/
-                return;
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
             }
+          }      
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
         }
+      }
     };
-
-    // TABS
-
-    function gup( name, url ) {
-        if (!url) url = location.href;
-        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-        var regexS = "[\\?&]"+name+"=([^&#]*)";
-        var regex = new RegExp( regexS );
-        var results = regex.exec( url );
-        return results == null ? null : results[1];
-    }
-
-    setTimeout(() => {
-        let catName = gup('cat', location.href.location);
-        console.log('111111', `${catName}.html`)
-        openCity(null, `${catName}.html`)
-    }, 100);
-
-    function openCity(evt, cityName) {
-        document.getElementById('addHtmlContent').innerHTML = `<div id="loading" style="
-      ">Đang lấy dữ liệu...<div>
-      </div></div>`;
-        if (evt) {
-            addHtmlContent(cityName)
-            var i, x, tablinks;
-            x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " w3-red";
-            setTimeout(() => {
-                includeHTML(cityName);
-            }, 10);
-        } else {
-            addHtmlContent(cityName)
-            setTimeout(() => {
-                document.getElementById(cityName).style.display = "block";
-                document.getElementById('firstButton').classList.add('w3-red');
-                // removeHTMLNotUse(cityName);
-                includeHTML(cityName);
-            }, 10);
-        }
-    }
-
-    function addHtmlContent(cityName) {
-        let htmlContent = `<div id="${cityName}" class="w3-container city">
-            <div ${cityName}="https://raw.githack.com/phamanhduy/nguonhangbabyfaz/main/${cityName}"></div>
-          </div>`;
-        document.getElementById('addHtmlContent').innerHTML = htmlContent;
-    }
+    includeHTML();
 </script>
-<script>
-    (function (d, s, id, t) {
-        if (d.getElementById(id)) return;
-        var js, fjs = d.getElementsByTagName(s)[0];
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://widget.oncustomer.asia/js/index.js?token=' + t;
-        fjs.parentNode.insertBefore(js, fjs);
-    }
-        (document, 'script', 'oc-chat-widget-bootstrap', '2f489c6d8237c36cc64c42b95e755250'));
-</script>
-<style type="text/css">
-    .chinhsachdaily td.s0,
-    .chinhsachdaily td.s1,
-    .chinhsachdaily td.s2,
-    .chinhsachdaily td.s4 {
-        text-align: left !important;
-    }
-
-    .ritz.grid-container {
-        margin-left: 83px;
-    }
-
-    #loading {
-        text-align: center;
-        font-size: 20px;
-        padding-top: 30px;
-    }
-</style>
