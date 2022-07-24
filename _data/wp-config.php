@@ -24,13 +24,13 @@
 define( 'DB_NAME', 'duypham_biz' );
 
 /** Database username */
-define( 'DB_USER', 'duypham.biz-65lyvN' );
+define( 'DB_USER', 'admin' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'aSpSTil0rWye' );
+define( 'DB_PASSWORD', 'luongthaivien1@A' );
 
 /** Database hostname */
-define( 'DB_HOST', 'global-db:3306' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
