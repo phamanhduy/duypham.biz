@@ -45,6 +45,20 @@
 
 </head>
 
+<script>
+	function sendMessage(params) {
+		const isEmpty = (str) => (!str?.length);
+		$('#cform').submit();
+		let form_name = document.getElementById('form_name').value;
+		let form_email = document.getElementById('form_email').value;
+		let form_subject = document.getElementById('form_subject').value;
+		let form_message = document.getElementById('form_message').value;
+		if (!isEmpty(form_name) && !isEmpty(form_email) && !isEmpty(form_subject) && !isEmpty(form_message)) {
+			window.open('http://zalo.me/0364463700', '_blank');
+		}
+	}
+</script>
+
 <body>
 
 	<!-- Page -->
@@ -1092,19 +1106,6 @@
 										<a href="javascript:void(0)" class="btn btn_animated"
 											onclick="sendMessage()"><span class="circle">Send
 												Message</span></a>
-												<script>
-													function sendMessage(params) {
-														const isEmpty = (str) => (!str?.length);
-														$('#cform').submit();
-														let form_name = document.getElementById('form_name').value;
-														let form_email = document.getElementById('form_email').value;
-														let form_subject = document.getElementById('form_subject').value;
-														let form_message = document.getElementById('form_message').value;
-														if (!isEmpty(form_name) && !isEmpty(form_email) && !isEmpty(form_subject) && !isEmpty(form_message)) {
-															window.open('http://zalo.me/0364463700', '_blank');
-														}
-													}
-												</script>
 									</form>
 									<div class="alert-success">
 										<p>Thanks, your message is sent successfully. We will contact you shortly!</p>
